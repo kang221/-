@@ -1,6 +1,7 @@
 #### initial
 
 共有initial_aligment、initial_ex_rotation、initial_sfm、solve_5pts四个部分。
+
 ![Uploading image.png…]()
 
 
@@ -1140,5 +1141,6 @@ bool MotionEstimator::solveRelativeRT(const vector<pair<Vector3d, Vector3d>> &co
     return false;
 }
 ```
+
 
 
