@@ -2,9 +2,6 @@
 
 共有initial_aligment、initial_ex_rotation、initial_sfm、solve_5pts四个部分。
 
-![Uploading image.png…]()
-
-
 ##### initial_aligment.cpp
 
 该代码用于对齐IMU和视觉观测数据，共包含了5个函数，其中两个是在.h文件中定义的。
@@ -1141,6 +1138,7 @@ bool MotionEstimator::solveRelativeRT(const vector<pair<Vector3d, Vector3d>> &co
     return false;
 }
 ```
+
 
 
 
