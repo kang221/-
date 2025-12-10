@@ -4,6 +4,10 @@
 
 整个源文件通过定义多个回调函数，并在主函数中创建节点和订阅话题，形成一个 VIO 数据处理模块。该节点通过回调函数接收传感器信息，再通过 estimator 接口执行实际的状态估计和计算。
 
+<p align="center">
+  <img src="../picture/rosNodeTest.png" width="550">
+</p>
+
 ```cpp
 #include <stdio.h>
 #include <queue>
@@ -374,4 +378,5 @@ int main(int argc, char **argv)
     return 0;
 }
 ```
+
 
