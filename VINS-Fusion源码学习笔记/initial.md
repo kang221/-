@@ -1,6 +1,10 @@
 #### initial
 
-共有initial_aligment、initial_ex_rotation、initial_sfm、solve_5pts四个部分。
+共有initial_aligment、initial_ex_rotation、initial_sfm、solve_5pts四个部分，各个部分的作用笔者用一个简单的思维导图先进行简单的展开介绍，这样在阅读代码的时候带着目的会更容易理解和记忆。
+
+<p align="center">
+  <img src="../picture/initial.png" width="550">
+</p>
 
 ##### initial_aligment.cpp
 
@@ -1138,6 +1142,7 @@ bool MotionEstimator::solveRelativeRT(const vector<pair<Vector3d, Vector3d>> &co
     return false;
 }
 ```
+
 
 
 
