@@ -17,6 +17,7 @@ solveGyroscopeBias(.h)、TangentBasis、RefineGravity、LinearAlignment、Visual
 该函数用于求解陀螺仪的偏差，对应文章陀螺仪偏差校准部分。
 
 代码中涉及到的旋转，计算的是相邻两帧之间的相对旋转（IMU坐标系下），不是相机到IMU坐标系的转化。
+
 $$
 \Delta q_{\text{visual}}
 = (q_{bi}^v)^{-1} \otimes q_{bj}^v
@@ -1142,6 +1143,7 @@ bool MotionEstimator::solveRelativeRT(const vector<pair<Vector3d, Vector3d>> &co
     return false;
 }
 ```
+
 
 
 
